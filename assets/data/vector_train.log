@@ -1,0 +1,40 @@
+
+Evaluation at step 50000:
+Mean episode reward: 9.14 +/- 0.17
+New best mean eval return: 9.14 -> ./logs/checkpoint/q_net_checkpoint_FlappyBird-v0_best.pth
+
+Evaluation at step 100000:
+Mean episode reward: 14.40 +/- 1.80
+New best mean eval return: 14.40 -> ./logs/checkpoint/q_net_checkpoint_FlappyBird-v0_best.pth
+
+Evaluation at step 150000:
+Mean episode reward: 17.24 +/- 5.41
+New best mean eval return: 17.24 -> ./logs/checkpoint/q_net_checkpoint_FlappyBird-v0_best.pth
+
+Evaluation at step 200000:
+Mean episode reward: 49.80 +/- 48.23
+New best mean eval return: 49.80 -> ./logs/checkpoint/q_net_checkpoint_FlappyBird-v0_best.pth
+
+Evaluation at step 250000:
+Mean episode reward: 152.16 +/- 108.85
+New best mean eval return: 152.16 -> ./logs/checkpoint/q_net_checkpoint_FlappyBird-v0_best.pth
+
+Evaluation at step 300000:
+Mean episode reward: 213.20 +/- 141.06
+New best mean eval return: 213.20 -> ./logs/checkpoint/q_net_checkpoint_FlappyBird-v0_best.pth
+
+Evaluation at step 350000:
+Mean episode reward: 923.40 +/- 1116.54
+New best mean eval return: 923.40 -> ./logs/checkpoint/q_net_checkpoint_FlappyBird-v0_best.pth
+
+Evaluation at step 400000:
+Mean episode reward: 111.12 +/- 101.24
+
+Evaluation at step 450000:
+Mean episode reward: 1397.28 +/- 1816.98
+New best mean eval return: 1397.28 -> ./logs/checkpoint/q_net_checkpoint_FlappyBird-v0_best.pth
+
+Evaluation at step 500000:
+Mean episode reward: 481.90 +/- 377.90
+
+Best eval return during training: 1397.28 (./logs/checkpoint/q_net_checkpoint_FlappyBird-v0_best.pth)

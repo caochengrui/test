@@ -28,7 +28,7 @@ def evaluate_policy(
     eval_exploration_rate: float = 0.0,
     video_name: Optional[str] = None,
     device: str = "auto",
-) -> None:
+) -> np.ndarray:
     """
     Evaluate the policy by computing the average episode reward
     over n_eval_episodes episodes.
@@ -39,6 +39,8 @@ def evaluate_policy(
     :param eval_exploration_rate: The exploration rate to use during evaluation
     :param video_name: When set, the filename of the video to record.
     :param device: PyTorch device. "auto" detects from the q_net parameters.
+    :return: A 1-D ``np.ndarray`` of per-episode returns. Callers that only
+        care about the printed mean can safely ignore it.
     """
     if device == "auto":
         device = next(q_net.parameters()).device.type
@@ -102,3 +104,4 @@ def evaluate_policy(
 
     # Print mean and std of the episode rewards
     print(f"Mean episode reward: {np.mean(episode_returns):.2f} +/- {np.std(episode_returns):.2f}")
+    return np.asarray(episode_returns, dtype=np.float64)
